@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Button, Icon} from 'semantic-ui-react';
 import './App.css';
 
 function App() {
@@ -7,9 +8,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1 >This is my awsome header</h1>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Button size="small" color="green"><Icon name="download" />
+        Download
+        </Button>
         <a
           className="App-link"
           href="https://reactjs.org"
