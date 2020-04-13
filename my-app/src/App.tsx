@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import {Button, Icon} from 'semantic-ui-react';
 import './App.css';
 
+
 const myPersonFuction = (input: string): string => {
   return 'Our person is important' + input;
 }
@@ -15,7 +16,7 @@ function App() {
       <header className="App-header">
         <Heading />
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>This is My Awsome START</h2>
+        <h3>This is My Awsome START</h3>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -30,6 +31,7 @@ function App() {
         >
           Learn React
         </a>
+        <Person />
         <Person name="Billy Joe Bob" callbackMethod={myPersonFuction} />
       </header>
     </div>
