@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { IUserProfile } from '../models/userProfile';
-import { Fragment } from 'react';
 import MiniProfile from './MiniProfile';
 import { Grid } from 'semantic-ui-react';
 
@@ -20,21 +19,21 @@ export default class SectionWithLoopRendering extends React.Component<ISectionWi
             userProfiles: [
                 {
                     id: 1,
-                    birthday: "04-09-2020",
+                    birthday: "05 July 1990",
                     favoritePizza: "pineapples",
-                    name: "Name1"
+                    name: "{userName}"
                 },
                 {
                     id: 2,
                     birthday: "01-01-0001",
                     favoritePizza: "pepperoni",
-                    name: "Name2"
+                    name: "{userName}"
                 },
                 {
                     id: 3,
                     birthday: "07-07-007",
                     favoritePizza: "cheese",
-                    name: "Name3"
+                    name: "{userName}"
                 }
             ]
         }
