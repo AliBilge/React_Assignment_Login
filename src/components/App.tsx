@@ -49,10 +49,10 @@ export default class App extends React.Component<IAppProps, IState> {
             onClickUserNameSetButton={this.onClickUserNameSetButton} />
             <ValidationForm />
             <div>
-            {isButtonPressed ?
-                        <SectionWithLoopRendering />
-                        :
-                        <h1>Please Login</h1>
+                    {isButtonPressed ?
+                      <SectionWithLoopRendering />
+                      :
+                      <h4>Not Logged In</h4>
                     }
             </div>
         </div>
